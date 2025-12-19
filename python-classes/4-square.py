@@ -1,28 +1,28 @@
 #!/usr/bin/python3
-"""
-Defines a Square class with a private size attribute
-and getter/setter for controlled access.
-"""
 
 
 class Square:
+    """
+    Square class that defines a square with a private size attribute
+    """
+
     def __init__(self, size=0):
         """
         Initialize the square with an optional size
         """
-        self.size = size   # setter çağırılır
+        self.size = size
 
-    @property  # getter
+    @property
     def size(self):
         """
-        Getter: size dəyərini qaytarır
+        Retrieve the size of the square
         """
         return self.__size
 
-    @size.setter  # setter
+    @size.setter
     def size(self, value):
         """
-        Setter: size dəyərini yoxlayaraq təyin edir
+        Set the size of the square with validation
         """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
@@ -32,4 +32,7 @@ class Square:
         self.__size = value
 
     def area(self):
+        """
+        Return the area of the square
+        """
         return self.__size ** 2
