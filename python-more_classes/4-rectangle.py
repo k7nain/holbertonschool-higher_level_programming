@@ -51,5 +51,5 @@ class Rectangle:
         return "\n".join(line)
 
     def __repr__(self):
-        """Returns a string so that the object can be recreated."""
+        """Returns a  string so that the object can be recreated."""
         return "Rectangle({}, {})".format(self.width, self.height)
