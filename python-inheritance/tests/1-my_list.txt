@@ -18,3 +18,12 @@ MyList class tests
 
 >>> print(my_list)
 [1, 4, 2, 3, 5]
+>>> new_list = MyList()
+>>> new_list.append(-2)
+>>> new_list.append(3)
+>>> new_list.append(0)
+>>> new_list.print_sorted()
+[-2, 0, 3]
+>>> empty_list = MyList()
+>>> empty_list.print_sorted()
+[]
