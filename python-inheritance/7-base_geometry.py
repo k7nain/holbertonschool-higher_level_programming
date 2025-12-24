@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Module that defines BaseGeometry class"""
+"""Defines a function that checks object class."""
 
 
 class BaseGeometry:
-    """BaseGeometry class"""
+    """Defines a class"""
     def area(self):
         raise Exception("area() is not implemented")
 
