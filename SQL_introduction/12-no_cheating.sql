@@ -2,4 +2,4 @@
 UPDATE second_table
 SET score = 10
 WHERE name = 'Bob'
-ORDER BY name DESC;
+ORDER BY score DESC;
