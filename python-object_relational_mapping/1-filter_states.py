@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-First ORM
+Lists all states with a name starting with N
 """
 
 import MySQLdb
@@ -20,8 +20,7 @@ if __name__ == "__main__":
     )
 
     cursor = db.cursor()
-    query = "SELECT * FROM states WHERE BINARY name LIKE 'N%' ORDER BY id ASC"
-    cursor.execute(query)
+    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
 
     for row in cursor.fetchall():
         print(row)
